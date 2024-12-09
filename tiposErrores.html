@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Excepciones en Python</title>
+</head>
+<body>
+    <h1>Excepciones en Python</h1>
+
+    <h2>Excepciones Base</h2>
+    <ul>
+        <li><strong>BaseException</strong>: Es la clase base para todas las excepciones. No deberías manejarla directamente.</li>
+        <li><strong>Exception</strong>: Clase base para la mayoría de las excepciones. Se suele usar para capturar cualquier excepción que herede de ella.</li>
+    </ul>
+
+    <h2>Excepciones del Sistema</h2>
+    <ul>
+        <li><strong>SystemExit</strong>: Se lanza cuando se usa <code>sys.exit()</code> para salir del programa.</li>
+        <li><strong>KeyboardInterrupt</strong>: Se lanza cuando el usuario interrumpe la ejecución del programa (generalmente pulsando <code>Ctrl+C</code>).</li>
+        <li><strong>GeneratorExit</strong>: Se lanza cuando un generador o coroutine finaliza.</li>
+    </ul>
+
+    <h2>Excepciones Estándar Más Comunes</h2>
+
+    <h3>ArithmeticError</h3>
+    <ul>
+        <li><strong>ZeroDivisionError</strong>: División por cero.</li>
+        <li><strong>OverflowError</strong>: Un número es demasiado grande para ser representado.</li>
+        <li><strong>FloatingPointError</strong>: Error en operaciones de punto flotante.</li>
+    </ul>
+
+    <h3>LookupError</h3>
+    <ul>
+        <li><strong>IndexError</strong>: Cuando un índice está fuera del rango en una secuencia.</li>
+        <li><strong>KeyError</strong>: Cuando una clave no existe en un diccionario.</li>
+    </ul>
+
+    <ul>
+        <li><strong>ValueError</strong>: Se lanza cuando una función recibe un argumento del tipo correcto, pero con un valor inapropiado.</li>
+        <li><strong>TypeError</strong>: Se lanza cuando una operación o función recibe un objeto de un tipo inapropiado.</li>
+        <li><strong>AttributeError</strong>: Se lanza cuando se intenta acceder a un atributo que no existe en un objeto.</li>
+        <li><strong>ImportError</strong>: Se lanza cuando una importación falla.</li>
+        <li><strong>ModuleNotFoundError</strong>: Se lanza cuando no se encuentra el módulo que se intenta importar.</li>
+        <li><strong>NameError</strong>: Se lanza cuando una variable o nombre no está definido.</li>
+        <li><strong>UnboundLocalError</strong>: Se lanza cuando una variable local se refiere antes de ser asignada.</li>
+        <li><strong>FileNotFoundError</strong>: Se lanza cuando un archivo o directorio no se encuentra.</li>
+        <li><strong>IOError</strong>: Ocurre cuando hay un error en una operación de entrada/salida. En Python 3.x, está unificada con <strong>OSError</strong>.</li>
+        <li><strong>OSError</strong>: Se lanza cuando ocurre un error relacionado con el sistema operativo (por ejemplo, fallos en archivos o procesos).</li>
+        <li><strong>PermissionError</strong>: Ocurre cuando se intenta realizar una operación que requiere permisos que no están disponibles.</li>
+        <li><strong>FileExistsError</strong>: Ocurre cuando se intenta crear un archivo que ya existe.</li>
+        <li><strong>IsADirectoryError</strong>: Ocurre cuando se trata un directorio como si fuera un archivo.</li>
+        <li><strong>RuntimeError</strong>: Ocurre cuando se detecta un error que no pertenece a ninguna otra categoría.</li>
+        <li><strong>RecursionError</strong>: Se lanza cuando la recursión es demasiado profunda.</li>
+        <li><strong>MemoryError</strong>: Se lanza cuando el programa no puede asignar memoria adicional.</li>
+        <li><strong>StopIteration</strong>: Se lanza para indicar que un iterador no tiene más elementos.</li>
+        <li><strong>StopAsyncIteration</strong>: Se lanza para indicar que un objeto asíncrono no tiene más elementos.</li>
+        <li><strong>AssertionError</strong>: Ocurre cuando falla una declaración <code>assert</code>.</li>
+    </ul>
+
+    <h2>Excepciones Más Específicas</h2>
+    <ul>
+        <li><strong>EOFError</strong>: Se lanza cuando se encuentra el final de un archivo de manera inesperada.</li>
+        <li><strong>EnvironmentError</strong>: Clase base para excepciones relacionadas con el entorno. En versiones recientes de Python, está unificada con <strong>OSError</strong>.</li>
+        <li><strong>IndentationError</strong>: Error relacionado con la indentación del código Python.</li>
+        <li><strong>TabError</strong>: Se lanza cuando hay una mezcla inconsistente de tabulaciones y espacios en la indentación.</li>
+        <li><strong>UnicodeError</strong>: Error relacionado con la codificación o decodificación de Unicode.</li>
+        <li><strong>UnicodeEncodeError</strong>: Ocurre al intentar codificar caracteres Unicode en una codificación específica.</li>
+        <li><strong>UnicodeDecodeError</strong>: Ocurre al intentar decodificar bytes en una codificación específica.</li>
+        <li><strong>UnicodeTranslateError</strong>: Ocurre durante la traducción de un carácter Unicode.</li>
+    </ul>
+
+    <h2>Excepciones de Advertencia</h2>
+    <ul>
+        <li><strong>Warning</strong>: Clase base para advertencias que no interrumpen el flujo normal del programa.</li>
+        <li><strong>DeprecationWarning</strong>: Se emite cuando se utiliza una característica que está en desuso.</li>
+        <li><strong>PendingDeprecationWarning</strong>: Similar a <strong>DeprecationWarning</strong>, pero para características que están marcadas para eliminación futura.</li>
+        <li><strong>SyntaxWarning</strong>: Advertencia sobre una construcción de sintaxis dudosa.</li>
+        <li><strong>RuntimeWarning</strong>: Advertencia para situaciones de ejecución dudosas.</li>
+        <li><strong>UserWarning</strong>: Advertencia generada por el usuario.</li>
+        <li><strong>FutureWarning</strong>: Advertencia de que una característica va a cambiar en futuras versiones de Python.</li>
+    </ul>
+</body>
+</html>
